@@ -35,14 +35,35 @@ CLI launch -> hld create session -> task runs -> [approval?]
 
 2) 启动/使用 hlyr
 ```bash
-cd hlyr
-bun install
-bun run dev
+$ cd hlyr
+$ bun install
+# 输出示例（截断）：
+#  Saved lockfile
+#  + dependencies installed
+#   143 packages installed in 2.14s
+$ bun run dev
+# 输出示例（截断）：
+#  hlyr v0.x started
+#  RPC target: http://localhost:8080
+#  Ready for commands
 ```
 
 3) 发起会话（示例）
 - 运行 `hlyr launch`（或仓库中提供的等价命令）发起一次任务。
+  - 输出示例（截断）：
+  ```bash
+  $ hlyr launch --query "Index project and start refactor"
+  # session created: s_abc123
+  # status: running
+  # streaming logs...
+  ```
 - 该任务在执行过程中，一旦命中“需要审批”的操作，hld 会将会话状态置为 `waiting_input` 并创建待审批项。
+  - 输出示例（WUI）：“待审批”卡片出现，CLI：
+  ```bash
+  # status: waiting_input
+  # approval required: write_file to /critical/path
+  # open WUI or run: hlyr approvals approve --id ap_456
+  ```
 
 4) 观察待审批
 - 方式一：在 WUI 中打开“审批”/“会话详情”查看待处理项；

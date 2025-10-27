@@ -18,6 +18,11 @@
 - 作用：推送会话、审批、系统事件的实时更新
 - 客户端：WUI 通过 EventSource 订阅；CLI 亦可消费
 
+时序（ASCII）：
+```
+hld emit event -> store persist -> notify SSE -> WUI/CLI receive -> update UI/state
+```
+
 ## 4. Mapper 层
 - 位置：`hld/api/mapper/mapper.go`
 - 作用：领域模型 ↔ API DTO 的双向映射

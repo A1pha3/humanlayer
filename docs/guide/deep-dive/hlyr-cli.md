@@ -50,6 +50,15 @@
   - 打印 RPC 请求/响应（注意脱敏）
   - 遇到超时/连接失败时比对 hld 日志
 
+示例输出（`config show`）：
+```bash
+$ hlyr config show
+# target: http://localhost:8080
+# mcp: enabled
+# auth: none
+# contracts: v0.x
+```
+
 ## 7. 常见问题
 - 与 hld 版本不匹配 → 更新 `packages/contracts` 并统一升级
 - 命令解析冲突 → 调整别名与参数名

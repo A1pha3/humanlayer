@@ -12,7 +12,11 @@
 在仓库根目录执行：
 
 ```bash
-bun install
+$ bun install
+# 输出示例（截断）：
+#  Saved lockfile
+#  + dependencies installed
+#   143 packages installed in 2.14s
 ```
 
 常用脚本（根目录 `package.json`）：

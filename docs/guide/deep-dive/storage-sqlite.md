@@ -28,6 +28,14 @@
 - 复现用例后直接检查 SQLite（临时用 SQLite 浏览器/CLI）
 - 对比 mapper 输出与 DB 实际记录
 
+示例（CLI 浏览数据库）：
+```bash
+$ sqlite3 /tmp/hld.db 'SELECT id, status FROM sessions ORDER BY created_at DESC LIMIT 5;'
+# s_abc123|waiting_input
+# s_def456|running
+# s_xyz789|completed
+```
+
 ## 6. 性能注意
 - 合理的索引与查询范围控制
 - 大量事件的批量写入与分页查询

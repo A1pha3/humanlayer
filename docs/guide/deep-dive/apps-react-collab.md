@@ -38,6 +38,14 @@ bun dev # 默认 PORT=4000
 - `lastSyncedStateVector` 与 `pendingUpdates` 协调首次/断线重连
 - `index.css`/`editor.css` 的样式兼容（光标、代码块、blockquote）
 
+示例输出（Bun 服务器）：
+```bash
+$ bun --hot ./src/index.tsx
+#  Listening on http://localhost:4000
+#  routes: / -> index.html
+#  websocket: enabled
+```
+
 ## 6. 扩展示例
 - 新增协作房间命名与权限校验（`roomName`/`table`）
 - 在 Electric 侧做租户隔离（token/source_id 注入）

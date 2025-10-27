@@ -27,6 +27,13 @@
 - DTO 对齐 `packages/contracts`，避免漂移
 - 错误与加载态：统一的错误边界与提示组件（`ErrorBoundary.tsx`）
 
+时序（ASCII）：
+```
+WUI subscribe SSE -> hld push events -> AppStore merge -> components render
+            ^                                         |
+            |-------------- REST fetch on demand ------
+```
+
 ## 5. 性能与可用性
 - 列表/详情的最小渲染单元，减少重绘
 - SSE 批量合并更新，避免抖动
