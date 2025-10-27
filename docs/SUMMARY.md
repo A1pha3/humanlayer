@@ -1,0 +1,28 @@
+# 文档索引（侧边栏）
+
+- 入门
+  - [快速开始](./guide/quick-start.md)
+  - [架构与目录总览](./guide/architecture.md)
+- 子项目
+  - [hld 使用指南](./guide/projects/hld.md)
+  - [hlyr 使用指南](./guide/projects/hlyr.md)
+  - [WUI 使用指南](./guide/projects/humanlayer-wui.md)
+- 工作流
+  - [端到端审批工作流实操](./guide/workflows/approval-e2e.md)
+- 深入理解（Deep Dive）
+  - [hld：Session/Approval 主线](./guide/deep-dive/hld-session.md)
+  - [hlyr：CLI 与 MCP 设计](./guide/deep-dive/hlyr-cli.md)
+  - [WUI：状态管理与组件设计](./guide/deep-dive/wui-architecture.md)
+  - [apps/react：协作编辑与 Bun 构建](./guide/deep-dive/apps-react-collab.md)
+  - [API、SSE 与 Contracts](./guide/deep-dive/api-sse-contracts.md)
+  - [存储：SQLite 与结果溯源](./guide/deep-dive/storage-sqlite.md)
+- 二次开发与扩展
+  - [扩展指南](./guide/develop/extensions.md)
+- 测试与调试
+  - [测试与调试指南](./guide/testing-debugging.md)
+- 部署与演示
+  - [部署与演示](./guide/deploy-demo.md)
+- 故障排查
+  - [故障排查与 FAQ](./guide/troubleshooting.md)
+- 术语表
+  - [术语表](./guide/glossary.md)
